@@ -73,18 +73,12 @@ const resetbtn = ()  =>    {
     turnO = true;
     enableboxes();
     msg_container.classList.add("hide");
+    // Clear the text in each box
+    box.forEach((box) => {
+        box.innerText = "";
+    });
 }
 
 
 new_btn.addEventListener("click",resetbtn);
 rstgame.addEventListener("click",resetbtn);
-
-
-// let count = 0;
-
-//  const cont = ()  =>  {
-//     count++;
-//     console.log(count);
-//    }
-
-//    box.addEventListener("click",cont)
